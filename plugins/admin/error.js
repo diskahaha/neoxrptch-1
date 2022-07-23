@@ -16,8 +16,8 @@ exports.run = {
      
      if (command == 'menu') {
        
-       // client.reply(m.chat, `bot dyl s7ab bac sf  .bac`, m)
-         client.sendFile(m.chat, 'https://github.com/mohamedBella2000/neoxrptch/blob/patch-1/media/image/Cheb%20Larbi%20_Avec%20Le%20Temps%20Tibgheni%20(1).MP3?raw=true', 'hello.mp3', '', m, {
+       client.reply(m.chat, `bot dyl s7ab bac sf  .bac`, m)
+         client.sendFile(m.chat, 'https://github.com/mohamedBella2000/neo2/blob/patch-1/media/image/AUD-20220723-WA0183.mp3?raw=true', 'MED.mp3', '', m, {
                document: false
             })
        
