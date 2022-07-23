@@ -15,7 +15,7 @@ global.evaluate_chars = ['=>', '~>', '<', '>', '$']
 // Country code that will be automatically blocked by the system, when sending messages in private chat
 global.blocks = ['91', '92']
 // Put target jid to forward friends story
-global.forwards = '212632244668@c.us'
+global.forwards = '21290516633@c.us'
 // Get neoxr apikey by registering at https://api.nxr.my.id
 global.Api = new (require('./neoxrApi'))('WtEmNB')
 // Get bid and key configuration for autoreply chat ai feature by registering at https://brainshop.ai
