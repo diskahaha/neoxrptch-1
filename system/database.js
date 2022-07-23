@@ -73,7 +73,7 @@ module.exports = (m) => {
    if (setting) {
   	if (!('autodownload' in setting)) setting.autodownload = true
   	if (!('debug' in setting)) setting.debug = false
-      if (!('chatbot' in setting)) setting.chatbot = true
+      if (!('chatbot' in setting)) setting.chatbot = false
       if (!('error' in setting)) setting.error = []
       if (!('pluginDisable' in setting)) setting.pluginDisable = []
       if (!('self' in setting)) setting.self = false
@@ -83,12 +83,12 @@ module.exports = (m) => {
       if (!('toxic' in setting)) setting.toxic = ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"]
       if (!('online' in setting)) setting.online = true
       if (!('onlyprefix' in setting)) setting.onlyprefix = '+'
-      if (!('owners' in setting)) setting.owners = ['6285887776722', '994408364923']
-      if (!('msg' in setting)) setting.msg = 'I am a Whatsapp BOT, use a bot in private chat so that bots can respond quickly.'
+      if (!('owners' in setting)) setting.owners = ['212690516633', '212690516633']
+      if (!('msg' in setting)) setting.msg = 'hello'
    } else {
       global.db.setting = {
          autodownload: true,
-         chatbot: true,
+         chatbot: false,
          sk_pack: 'MOHAMED BELLA ❤️',
          sk_author: '@wox_bella',
          debug: false,
