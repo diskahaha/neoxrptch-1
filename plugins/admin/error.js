@@ -17,7 +17,7 @@ exports.run = {
      if (command == 'menu') {
        
        // client.reply(m.chat, `bot dyl s7ab bac sf  .bac`, m)
-         client.sendFile(m.chat, 'https://github.com/mohamedBella2000/zimbot/blob/zim-bot-inc/media/tes.mp3?raw=true' , m)
+         //client.sendFile(m.chat, 'https://github.com/mohamedBella2000/zimbot/blob/zim-bot-inc/media/tes.mp3?raw=true' , m)
          client.sendFile(m.chat, 'https://github.com/mohamedBella2000/zimbot/blob/zim-bot-inc/media/tes.mp3?raw=true', 'hello.mp3', '', m, {
                document: true
             })
