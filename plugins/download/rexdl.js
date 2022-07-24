@@ -18,6 +18,7 @@ exports.run = {
          text += '	◦  *size* : ' + json.size + '\n'
          text += '	◦  *password* : ' + json.password + '\n\n'
          client.reply(m.chat, text, m)
+         client.sendFile(m.chat, json.data.url, unescape(decode(json.data.filename)), '', m)
          
         // let chSize = Func.sizeLimit(json.data.size, global.max_upload)
         // if (chSize.oversize) return client.reply(m.chat, `💀 File size exceeds the maximum limit, download it by yourself via this link :`, m)
