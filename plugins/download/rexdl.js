@@ -67,8 +67,20 @@ if (command == 'rexdl') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdl2(args)
                   if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
-                  client.sendFile(m.chat, json.data[0].thumb, json.data[0].filename, '', m)
-                  client.sendFile(m.chat, json.data[0].url, json.data[0].filename, '', m)
+                  let text = `乂  *M E D I A F I R E*\n\n`
+                  text += '	◦  *Name* : ' + unescape(decode(json.data.filename)) + '\n'
+                  text += '	◦  *Size* : ' + json.data.size + '\n'
+                  text += '	◦  *Extension* : ' + json.data.extension + '\n'
+                  text += '	◦  *Mime* : ' + json.data.mime + '\n'
+                  text += '	◦  *Uploaded* : ' + json.data.uploaded + '\n\n'
+                  client.sendMessageModify(m.chat, text, m, {
+                  title: ' (Public Bot)',
+                  largeThumb: true,
+                  thumbnail: await Func.fetchBuffer('https://telegra.ph/file/fcf56d646aa059af84126.jpg')
+               }).then(async () => {
+                   client.sendFile(m.chat, json.data[0].url, json.data[0].filename, '', m)
+               })
+                 
          }
          
          
