@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['rexdl', 'rex'],
+   usage: ['rexdl', 'rexdl2'],
    async: async (m, {
       client,
       args,
