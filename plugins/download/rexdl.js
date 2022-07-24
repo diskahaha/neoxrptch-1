@@ -2,6 +2,7 @@ exports.run = {
    usage: ['mf', 'rex'],
    async: async (m, {
       client,
+      url,
       args,
       isPrefix,
       command
@@ -10,10 +11,10 @@ exports.run = {
          if (!args || !args[0]) return client.reply(m.chat, Func.example(isPrefix, command, 'https://rexdl.com/android/easy-vpn-apk.html/'), m)
         // if (!args[0].match(/(https:\/\/www.rexdl.com\/)/gi)) return client.reply(m.chat, global.status.invalid, m)
          client.sendReact(m.chat, '🕒', m.key)
-         let json = await Api.rex(args[0])
+         let json = await Api.rex(url)
          if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
          let text = `乂  *R E X D L *\n\n`
-         text += '	◦  *Name* : ' + unescape(decode(json.name)) + '\n'
+         text += '	◦  *Name* : ' + json.name + '\n'
          text += '	◦  *version* : ' + json.version + '\n'
          text += '	◦  *size* : ' + json.size + '\n'
          text += '	◦  *password* : ' + json.password + '\n\n'
