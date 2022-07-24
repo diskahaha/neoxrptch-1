@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['mf', 'mediafire'],
+   usage: ['mf', 'rex'],
    async: async (m, {
       client,
       args,
