@@ -11,6 +11,12 @@ module.exports = class NeoxrApi {
       return json
    }
    
+   
+   rex = async (url) => {
+      let json = await Func.fetchJson(this.baseUrl + '/rexdl-get?url=' + url + '&apikey=' + this.apiKey)
+      return json
+   } 
+   
    podcast = async (url) => {
       let json = await Func.fetchJson(this.baseUrl + '/podcast?url=' + url + '&apikey=' + this.apiKey)
       return json
@@ -81,10 +87,7 @@ module.exports = class NeoxrApi {
       return json
    }
    
-  rex = async (url) => {
-      let json = await Func.fetchJson(this.baseUrl + '/rexdl-get?url=' + url + '&apikey=' + this.apiKey)
-      return json
-   }
+
    
    emojimix = async (emoticon) => {
   	let json = await Func.fetchJson(this.baseUrl + '/emoji?q=' + emoticon + '&apikey=' + this.apiKey)
