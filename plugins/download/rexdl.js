@@ -17,7 +17,7 @@ exports.run = {
          text += '	◦  *version* : ' + json.version + '\n'
          text += '	◦  *size* : ' + json.size + '\n'
          text += '	◦  *password* : ' + json.password + '\n\n'
-         text += '	◦  *url* : ' + json.data[1] + '\n\n'
+         text += '	◦  *url* : ' + json.data[1].url + '\n\n'
          client.reply(m.chat, text, m)
          //  client.sendFile(m.chat, json.data[1], unescape(decode(json.data[1])), '', m)
          
