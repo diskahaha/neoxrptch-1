@@ -67,6 +67,7 @@ if (command == 'rexdl') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdl2(args)
                   if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
+                  client.sendFile(m.chat, json.data[0].thumb, json.data[0].filename, '', m)
                   client.sendFile(m.chat, json.data[0].url, json.data[0].filename, '', m)
          }
          
