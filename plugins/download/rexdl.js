@@ -25,6 +25,9 @@ if (command == 'rexdl') {
                   text += '	◦  *publish* : ' + json.data[0].publish + '\n'
                   text += '	◦  *desc* : ' + json.data[0].desc + '\n\n'
                   text += '	◦  *url* : ' + json.data[0].url + '\n\n'
+                  text += '	◦  *url* : ' + json.data[1].url + '\n\n'
+                  text += '	◦  *url* : ' + json.data[2].url + '\n\n'
+                  text += '	◦  *url* : ' + json.data[3].url + '\n\n'
                   client.reply(m.chat, text, m)
  }
     
