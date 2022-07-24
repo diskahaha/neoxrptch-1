@@ -16,17 +16,19 @@ exports.run = {
          text += '	◦  *Name* : ' + unescape(decode(json.name)) + '\n'
          text += '	◦  *version* : ' + json.version + '\n'
          text += '	◦  *size* : ' + json.size + '\n'
-         text += '	◦  *password* : ' + json.password + '\n\n'
-         text += global.footer
-         let chSize = Func.sizeLimit(json.data.size, global.max_upload)
-         if (chSize.oversize) return client.reply(m.chat, `💀 File size exceeds the maximum limit, download it by yourself via this link :`, m)
-         client.sendMessageModify(m.chat, text, m, {
+         text += '	◦  *password* : ' + json.password '\n\n'
+         client.reply(m.chat, text, m)
+         
+        // let chSize = Func.sizeLimit(json.data.size, global.max_upload)
+        // if (chSize.oversize) return client.reply(m.chat, `💀 File size exceeds the maximum limit, download it by yourself via this link :`, m)
+        /* client.sendMessageModify(m.chat, text, m, {
             title: '© neoxr-bot v2.2.0 (Public Bot)',
             largeThumb: true,
             thumbnail: await Func.fetchBuffer('https://telegra.ph/file/fcf56d646aa059af84126.jpg')
          }).then(async () => {
             client.sendFile(m.chat, json.data.url, unescape(decode(json.data.filename)), '', m)
-         })
+         })*/
+         
       } catch {
          return client.reply(m.chat, global.status.error, m)
       }
