@@ -16,7 +16,7 @@ exports.run = {
          text += '	◦  *Name* : ' + unescape(decode(json.name)) + '\n'
          text += '	◦  *version* : ' + json.version + '\n'
          text += '	◦  *size* : ' + json.size + '\n'
-         text += '	◦  *password* : ' + json.password '\n\n'
+         text += '	◦  *password* : ' + json.password + '\n\n'
          client.reply(m.chat, text, m)
          
         // let chSize = Func.sizeLimit(json.data.size, global.max_upload)
