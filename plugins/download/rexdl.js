@@ -16,10 +16,10 @@ exports.run = {
          text += '	◦  *Name* : ' + unescape(decode(json.name)) + '\n'
          text += '	◦  *version* : ' + json.version + '\n'
          text += '	◦  *size* : ' + json.size + '\n'
-         text += '	◦  *password* : ' +desc json.password + '\n\n'
+         text += '	◦  *password* : ' + json.password + '\n\n'
          text += global.footer
          let chSize = Func.sizeLimit(json.data.size, global.max_upload)
-         if (chSize.oversize) return client.reply(m.chat, `💀 File size (${json.data.size}) exceeds the maximum limit, download it by yourself via this link : ${await (await scrap.shorten(json.data.link)).data.url}`, m)
+         if (chSize.oversize) return client.reply(m.chat, `💀 File size exceeds the maximum limit, download it by yourself via this link :`, m)
          client.sendMessageModify(m.chat, text, m, {
             title: '© neoxr-bot v2.2.0 (Public Bot)',
             largeThumb: true,
