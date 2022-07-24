@@ -35,15 +35,14 @@ if (command == 'rexdl') {
                         rowId: `${isPrefix}rexdl2 ` + json.data[0].url,
                         description: json.data[0].desc
                      }]
- 
+                     
+                        await client.sendList(m.chat, '', `乂  *R E X D L *\n\n`, '', 'Tap!', [{
+                        rows
+                     }], m)
+
                   
                   
-                  
-                  
-                  
-                  
-                  
-                  }
+}
     
          
                   if (command == 'rexdl2') {
