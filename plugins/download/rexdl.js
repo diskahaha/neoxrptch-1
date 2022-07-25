@@ -54,7 +54,7 @@ if (command == 'rexdl') {
                      }
                   ]
                      
-                        await client.sendList(m.chat, '', `乂  *R E X D L *\n\n`, '', 'Tap!', [{
+                     await client.sendList(m.chat, '', `乂  *R E X D L *\n\n`, '', 'Tap!', [{
                         rows
                      }], m)
 
@@ -67,15 +67,15 @@ if (command == 'rexdl') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdl2(args)
                   if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
-                  let text = `乂  *R E X D L *\n\n`
+                  /*let text = `乂  *R E X D L *\n\n`
                   text += '	◦  *Name* : ' + unescape(decode(json.data[0].name)) + '\n'
                   text += '	◦  *update* : ' + json.data[0].update + '\n'
                   text += '	◦  *version* : ' + json.data[0].version + '\n'
                   text += '	◦  *size* : ' + json.data[0].size + '\n'
                   text += '	◦  *password* : ' + json.data[0].password + '\n\n'
-                 
+                 */
                   // thumbnail: await Func.fetchBuffer('https://telegra.ph/file/1d01612178ca6187189bf.jpg')
-                   client.reply(m.chat, text , m)
+                  // client.reply(m.chat, text , m)
                    client.sendFile(m.chat, json.data[0].url, json.data[0].filename, '', m)
                  
          }
