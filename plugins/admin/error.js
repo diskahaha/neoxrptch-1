@@ -18,11 +18,11 @@ exports.run = {
 
        
 
-       client.reply(m.chat, `s7ab bac sf  .bac`, m)
+
 
        
 
-      }
+
        
       }
       
