@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['rexdl', 'rexdl2'],
+   usage: ['apk', 'rexdl2'],
    async: async (m, {
       client,
       args,
@@ -15,7 +15,7 @@ exports.run = {
          
          
          
-if (command == 'rexdl') {
+if (command == 'apk') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdlsearch(args)
                   let json2 = await Api.rexdl2(args)
@@ -54,7 +54,7 @@ if (command == 'rexdl') {
                      }
                   ]
                      
-                     await client.sendList(m.chat, '', `乂  *R E X D L *\n\n`, '', 'Tap!', [{
+                     await client.sendList(m.chat, '', `乂  *R E X D L*\n\n`, '', 'Tap!', [{
                         rows
                      }], m)
 
