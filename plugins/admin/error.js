@@ -14,7 +14,7 @@ exports.run = {
      // ________________________________________________
      
      
-     if (command == 'bot') {
+     if (command ==
 
        
 
@@ -24,7 +24,7 @@ exports.run = {
 
 
        
-      }
+
       
       // urbn 
       if (command == 'mo3jam') {
