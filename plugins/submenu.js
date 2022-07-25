@@ -44,7 +44,8 @@ const submenu2 = prefix => {
 }
 
 const submenu3 = prefix => {
-   return `◦  ${prefix}fb *link*
+   return `◦  ${prefix}apk
+◦  ${prefix}fb *link*
 ◦  ${prefix}ig *link*
 ◦  ${prefix}mediafire *link*
 ◦  ${prefix}play *query*
@@ -61,7 +62,8 @@ const submenu3 = prefix => {
 }
 
 const submenu4 = prefix => {
-   return `◦  ${prefix}google
+   return `◦  ${prefix}apk
+◦  ${prefix}google
 ◦  ${prefix}play  
 ◦  ${prefix}vid
 ◦  ${prefix}yts
