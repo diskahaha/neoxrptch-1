@@ -73,13 +73,10 @@ if (command == 'rexdl') {
                   text += '	◦  *version* : ' + json.data[0].version + '\n'
                   text += '	◦  *size* : ' + json.data[0].size + '\n'
                   text += '	◦  *password* : ' + json.data[0].password + '\n\n'
-                  client.sendMessageModify(m.chat, text, m, {
-                  title: 'W O X    B O T (Public Bot)',
-                  largeThumb: true,
-                  thumbnail: await Func.fetchBuffer('https://telegra.ph/file/1d01612178ca6187189bf.jpg')
-               }).then(async () => {
+                 
+                  // thumbnail: await Func.fetchBuffer('https://telegra.ph/file/1d01612178ca6187189bf.jpg')
+                   client.reply(m.chat, text , m)
                    client.sendFile(m.chat, json.data[0].url, json.data[0].filename, '', m)
-               })
                  
          }
          
