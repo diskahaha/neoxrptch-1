@@ -138,7 +138,8 @@ const submenu7 = prefix => {
 ◦  ${prefix}elaina`
 }
 const submenu8 = prefix => {
-   return `◦  ${prefix}lolice
+   return `◦  ${prefix}tp *text*
+◦  ${prefix}lolice
 ◦  ${prefix}itssostupid
 ◦  ${prefix}iss
 ◦  ${prefix}stupid
