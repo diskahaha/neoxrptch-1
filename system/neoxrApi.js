@@ -27,10 +27,30 @@ module.exports = class NeoxrApi {
       return json
    }
    
+     textpro = async (q) => {
+      let json = 'https://bx-hunter.herokuapp.com/api/textpro/blackpink?apikey=tNJF3kxQ8QJdMDwMFxE3lnmTE&text=' + q 
+      return json
+   }
+   
+   
    fb = async (url) => {
       let json = await Func.fetchJson(this.baseUrl + '/fb?url=' + url + '&apikey=' + this.apiKey)
       return json
    }
+   
+   
+   
+   gore = async (q) => {
+      let json = await Func.fetchJson(this.baseUrl + '/gore-search?q=' + q + '&apikey=' + this.apiKey)
+      return json
+   }
+   
+   goreget = async (url) => {
+      let json = await Func.fetchJson(this.baseUrl + '/gore-get?url=' + url + '&apikey=' + this.apiKey)
+      return json
+   }
+   
+   
 
    ig = async (url) => {
       let json = await Func.fetchJson(this.baseUrl + '/ig?url=' + url + '&apikey=' + this.apiKey)
