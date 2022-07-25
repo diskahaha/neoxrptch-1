@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['menu','mo3jam','quote','oxford'],
+   usage: ['mo3jam','quote','oxford'],
    async: async (m, {
       client,
       text,
@@ -14,7 +14,7 @@ exports.run = {
      // ________________________________________________
      
      
-     if (command ==
+
 
        
 
