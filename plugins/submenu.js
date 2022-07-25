@@ -74,7 +74,8 @@ const submenu3 = prefix => {
 }
 
 const submenu4 = prefix => {
-   return `◦  ${prefix}google
+   return `◦  ${prefix}gore
+◦  ${prefix}google
 ◦  ${prefix}play  
 ◦  ${prefix}vid
 ◦  ${prefix}yts
