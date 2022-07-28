@@ -72,7 +72,7 @@ exports.run = {
                   
 }              
          
-           /* if (command == 'apk') {
+           /* if (command == 'rexdl') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdlsearch(args)
                   let json2 = await Api.rexdl2(args)
