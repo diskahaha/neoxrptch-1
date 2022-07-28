@@ -71,6 +71,7 @@ const submenu4 = prefix => {
 ◦  ${prefix}stickerline 
 ◦  ${prefix}apk
 ◦  ${prefix}apk2
+◦  ${prefix}apk5
 ◦  ${prefix}setmsg`
 }
 
