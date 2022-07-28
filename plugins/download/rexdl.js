@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['apk', 'rexdl2'],
+   usage: ['apk2', 'rexdl2'],
    async: async (m, {
       client,
       args,
@@ -15,7 +15,7 @@ exports.run = {
          
          
          
-            if (command == 'apk') {
+            if (command == 'apk2') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdlsearch(args)
                   let json2 = await Api.rexdl2(args)
@@ -72,7 +72,7 @@ exports.run = {
                   
 }              
          
-           /* if (command == 'apk') {
+           /* if (command == 'apk2') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdlsearch(args)
                   let json2 = await Api.rexdl2(args)
