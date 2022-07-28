@@ -44,8 +44,7 @@ const submenu2 = prefix => {
 }
 
 const submenu3 = prefix => {
-   return `◦  ${prefix}apk
-◦  ${prefix}fb *link*
+   return `◦  ${prefix}fb *link*
 ◦  ${prefix}ig *link*
 ◦  ${prefix}mediafire *link*
 ◦  ${prefix}play *query*
@@ -62,15 +61,16 @@ const submenu3 = prefix => {
 }
 
 const submenu4 = prefix => {
-   return `◦  ${prefix}apk
-◦  ${prefix}google
+   return `◦  ${prefix}google
 ◦  ${prefix}play  
 ◦  ${prefix}vid
+◦  ${prefix}gore
 ◦  ${prefix}yts
 ◦  ${prefix}wikipedia
 ◦  ${prefix}image
 ◦  ${prefix}stickerline 
 ◦  ${prefix}apk
+◦  ${prefix}apk2
 ◦  ${prefix}setmsg`
 }
 
@@ -128,6 +128,7 @@ const submenu7 = prefix => {
 }
 const submenu8 = prefix => {
    return `◦  ${prefix}lolice
+◦  ${prefix}tp
 ◦  ${prefix}itssostupid
 ◦  ${prefix}iss
 ◦  ${prefix}stupid
