@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['apk'],
+   usage: ['apk5'],
    async: async (m, {
       client,
       isPrefix
@@ -73,7 +73,7 @@ exports.run = {
       text += '𝗠𝗥 𝗬𝗢𝗨𝗖𝗛𝗡\n'
       text += '◦ *instagram* : http://instagram.com/mr_johan_shezir\n'
       text += '◦ *facebook* : https://www.facebook.com/profile.php?id=100027327995013'
-      await client.sendList(m.chat, '', text, '', 'click!', [{
+      await client.sendList(m.chat, '', text, '', 'Click!', [{
          rows
       }], m)
    },
