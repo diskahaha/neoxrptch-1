@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['apk'],
+   usage: ['apkP'],
    async: async (m, {
       client,
       isPrefix
