@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['apk', 'rexdl2'],
+   usage: ['rexdl', 'rexdl2'],
    async: async (m, {
       client,
       args,
@@ -15,7 +15,7 @@ exports.run = {
          
          
          
-if (command == 'apk') {
+            if (command == 'rexdl') {
                   client.sendReact(m.chat, '🕒', m.key)
                   let json = await Api.rexdlsearch(args)
                   let json2 = await Api.rexdl2(args)
@@ -30,27 +30,37 @@ if (command == 'apk') {
                      {
                         title: json.data[1].name,
                         rowId: `${isPrefix}rexdl2 ` + json.data[1].url,
-                        description: json.data[0].desc
+                        description: json.data[1].desc
                      },
                      {
                         title: json.data[2].name,
                         rowId: `${isPrefix}rexdl2 ` + json.data[2].url,
-                        description: json.data[0].desc
+                        description: json.data[2].desc
                      },
                      {
                         title: json.data[3].name,
                         rowId: `${isPrefix}rexdl2 ` + json.data[3].url,
-                        description: json.data[0].desc
+                        description: json.data[3].desc
                      },
                      {
                         title: json.data[4].name,
                         rowId: `${isPrefix}rexdl2 ` + json.data[4].url,
-                        description: json.data[0].desc
+                        description: json.data[4].desc
                      },
                      {
                         title: json.data[5].name,
                         rowId: `${isPrefix}rexdl2 ` + json.data[5].url,
-                        description: json.data[0].desc
+                        description: json.data[5].desc
+                     },
+                     {
+                        title: json.data[6].name,
+                        rowId: `${isPrefix}rexdl2 ` + json.data[6].url,
+                        description: json.data[6].desc
+                     },
+                     {
+                        title: json.data[7].name,
+                        rowId: `${isPrefix}rexdl2 ` + json.data[7].url,
+                        description: json.data[7].desc
                      }
                   ]
                      
@@ -60,7 +70,32 @@ if (command == 'apk') {
 
                   
                   
-}
+}              
+         
+           /* if (command == 'rexdl') {
+                  client.sendReact(m.chat, '🕒', m.key)
+                  let json = await Api.rexdlsearch(args)
+                  let json2 = await Api.rexdl2(args)
+                  if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
+               
+               
+                  let rows = [{title: '', rowId: ``, description: '' }]
+                  
+                  for (var j = 0; j < 10 ; j++) {
+                     rows = [{
+                        title: json.data[j].name,
+                        rowId: `${isPrefix}rexdl2 ` + json.data[j].url,
+                        description: json.data[j].desc
+                     }]
+                  }
+               
+                     
+                     await client.sendList(m.chat, '', `乂  *R E X D L*\n\n`, '', 'Tap!', [{
+                        rows
+                     }], m)
+                  
+                  
+}*/
     
          
                   if (command == 'rexdl2') {
