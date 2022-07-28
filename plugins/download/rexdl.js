@@ -64,7 +64,7 @@ exports.run = {
                      }
                   ]
                      
-                     await client.sendList(m.chat, '', `乂  *R E X D L*\n\n`, '', 'Tap!', [{
+                     await client.sendList(m.chat, '', `乂  *R E X D L*\n\n`, '', 'Click!', [{
                         rows
                      }], m)
 
@@ -90,7 +90,7 @@ exports.run = {
                   }
                
                      
-                     await client.sendList(m.chat, '', `乂  *R E X D L*\n\n`, '', 'Tap!', [{
+                     await client.sendList(m.chat, '', `乂  *R E X D L*\n\n`, '', 'Click!', [{
                         rows
                      }], m)
                   
