@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['rexdl', 'rexdl2'],
+   usage: ['apk', 'rexdl2'],
    async: async (m, {
       client,
       args,
