@@ -11,6 +11,25 @@ module.exports = class NeoxrApi {
       return json
    }
    
+    omri = async (query) => {
+      let json = await Func.fetchJson('https://api.agify.io/?name=' + query)
+      return json
+   } 
+   
+   universities = async (query) => {
+      let json = await Func.fetchJson('http://universities.hipolabs.com/search?country=' + query)
+      return json
+   } 
+   boredapi = async () => {
+  	let json = await Func.fetchJson('https://www.boredapi.com/api/activity')
+      return json
+   }
+   
+    github = async (query) => {
+      let json = await Func.fetchJson(this.baseUrl + '/ghstalk?username=' + query + '&apikey=' + this.apiKey)
+      return json
+   }
+   
    rexdlsearch = async (query) => {
       let json = await Func.fetchJson(this.baseUrl + '/rexdl?q=' + query + '&apikey=' + this.apiKey)
       return json
@@ -22,15 +41,50 @@ module.exports = class NeoxrApi {
    } 
 
    
+   
+   
+   
+   apkdone = async (query) => {
+      let json = await Func.fetchJson('https://api.indocoder.dev/api/search-apkmod?q=' + query + '&apikey=3yLPmfaoY0')
+      return json
+   }  
+   
+   apkdone1 = async (url) => {
+      let json = await Func.fetchJson('https://api.indocoder.dev/api/apkmodurl?url=' + url + '&apikey=3yLPmfaoY0')
+      return json
+   } 
+   
+   
+   
    podcast = async (url) => {
       let json = await Func.fetchJson(this.baseUrl + '/podcast?url=' + url + '&apikey=' + this.apiKey)
       return json
    }
    
+     textpro = async (q) => {
+      let json = 'https://bx-hunter.herokuapp.com/api/textpro/blackpink?apikey=tNJF3kxQ8QJdMDwMFxE3lnmTE&text=' + q 
+      return json
+   }
+   
+   
    fb = async (url) => {
       let json = await Func.fetchJson(this.baseUrl + '/fb?url=' + url + '&apikey=' + this.apiKey)
       return json
    }
+   
+   
+   
+   gore = async (q) => {
+      let json = await Func.fetchJson(this.baseUrl + '/gore-search?q=' + q + '&apikey=' + this.apiKey)
+      return json
+   }
+   
+   goreget = async (url) => {
+      let json = await Func.fetchJson(this.baseUrl + '/gore-get?url=' + url + '&apikey=' + this.apiKey)
+      return json
+   }
+   
+   
 
    ig = async (url) => {
       let json = await Func.fetchJson(this.baseUrl + '/ig?url=' + url + '&apikey=' + this.apiKey)
