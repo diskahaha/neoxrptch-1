@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['bot','mo3jam','quote','oxford','apk','apkgoogledl'],
+   usage: ['bot','mo3jam','quote','oxford','apkgoogle','apkgoogledl'],
    async: async (m, {
       client,
       text,
@@ -34,7 +34,7 @@ exports.run = {
       }
       
       // urbn 
-      if (command == 'apk') {
+      if (command == 'apkgoogle') {
        
        client.reply(m.chat, ` جاري التحميل| تابعني على الانستغرام instagram.com/mr_johan_shezir `, m)
       if (!text) return client.reply(m.chat, Func.example(isPrefix, command, command != 'artinama' ? 'yntkts' : 'wildan'), m)
