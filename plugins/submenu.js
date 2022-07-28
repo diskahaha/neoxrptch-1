@@ -69,7 +69,7 @@ const submenu4 = prefix => {
 ◦  ${prefix}wikipedia
 ◦  ${prefix}image
 ◦  ${prefix}stickerline 
-◦  ${prefix}apkgoogle
+◦  ${prefix}apk
 ◦  ${prefix}apk2
 ◦  ${prefix}setmsg`
 }
