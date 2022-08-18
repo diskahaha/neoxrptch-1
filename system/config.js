@@ -1,10 +1,10 @@
 // Owner number
 
-global.owner = '6285221100126'
+global.owner = '212689349938'
 
 // Owner name
 
-global.owner_name = 'Wildan Izzudin'
+global.owner_name = '爪尺 ㄚㄖㄩ匚卄几'
 
 // Maximum upload file size limit (Default : 250 MB)
 
@@ -28,11 +28,11 @@ global.evaluate_chars = ['=>', '~>', '<', '>', '$']
 
 // Country code that will be automatically blocked by the system, when sending messages in private chat
 
-global.blocks = ['91', '92', '212']
+global.blocks = ['91', '92', '213']
 
 // Put target jid to forward friends story
 
-global.forwards = '6285221100126@c.us'
+global.forwards = '212689349938@c.us'
 
 // Get neoxr apikey by registering at https://api.nxr.my.id
 
