@@ -25,24 +25,8 @@
          rowId: `${isPrefix}menutype 5`,
          description: ``
          }, {
-         title: 'INTERNET-MENU',
-         rowId: `${isPrefix}menutype 6`,
-         description: ``
-         }, {
-         title: 'ANIME-MENU',
-         rowId: `${isPrefix}menutype 7`,
-         description: ``
-         }, {
-         title: 'IMAGE-MENU',
-         rowId: `${isPrefix}menutype 8`,
-         description: ``
-         }, {
-         title: 'AUDIO-MENU',
-         rowId: `${isPrefix}menutype 9`,
-         description: ``
-         }, {
          title: 'TOOLS-MENU',
-         rowId: `${isPrefix}menutype 10`,
+         rowId: `${isPrefix}menutype 6`,
          description: ``
       }]
       let text = 'Kenapa Bebek Kaki Nya Dua? Karna Kau Wibu :v\n'
