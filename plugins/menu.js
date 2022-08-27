@@ -45,11 +45,9 @@
          rowId: `${isPrefix}menutype 10`,
          description: ``
       }]
-      let text = '𝗛𝗔𝗟𝗙 𝗕𝗢𝗧\n'
+      let text = 'Kenapa Bebek Kaki Nya Dua? Karna Kau Wibu :v\n'
       text += '𝙱𝚈\n'
-      text += '𝗠𝗥 𝗬𝗢𝗨𝗖𝗛𝗡\n'
-      text += '◦ *instagram* : http://instagram.com/mr_johan_shezir\n'
-      text += '◦ *facebook* : https://www.facebook.com/profile.php?id=100027327995013'
+      text += '𝕭𝖔𝖙 • Andii ༢࿔ྀ\n'
       await client.sendList(m.chat, '', text, '', 'click!', [{
          rows
       }], m)
