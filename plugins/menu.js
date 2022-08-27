@@ -5,7 +5,7 @@
       isPrefix
    }) => {
       let rows = [{
-         title: 'HELP',
+         title: '𝕭𝖔𝖙 • Andii ༢࿔ྀ',
          rowId: `${isPrefix}menutype 1`,
          description: ``
       }, {
@@ -48,7 +48,7 @@
       let text = 'Kenapa Bebek Kaki Nya Dua? Karna Kau Wibu :v\n'
       text += '𝙱𝚈\n'
       text += '𝕭𝖔𝖙 • Andii ༢࿔ྀ\n'
-      await client.sendList(m.chat, '', text, '', 'click!', [{
+      await client.sendList(m.chat, '', text, '', 'Klik!', [{
          rows
       }], m)
    },
