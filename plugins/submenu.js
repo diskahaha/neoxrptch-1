@@ -21,7 +21,7 @@ exports.run = {
 }
 
 const submenu1 = prefix => {
-   return `*◦Contact the developer on WhatsApp wa.me/+212689349938◦*`
+   return `*◦Apaaa Sayang?◦*`
 }
 
 const submenu2 = prefix => {
