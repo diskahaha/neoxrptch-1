@@ -11,11 +11,7 @@ exports.run = {
       if (option == 3) return client.reply(m.chat, submenu3(isPrefix), m)
       if (option == 4) return client.reply(m.chat, submenu4(isPrefix), m)
       if (option == 5) return client.reply(m.chat, submenu5(isPrefix), m)
-      if (option == 6) return client.reply(m.chat, submenu6(isPrefix), m)
-      if (option == 7) return client.reply(m.chat, submenu7(isPrefix), m)
-      if (option == 8) return client.reply(m.chat, submenu8(isPrefix), m)
-      if (option == 9) return client.reply(m.chat, submenu9(isPrefix), m)
-      if (option == 10) return client.reply(m.chat, submenu10(isPrefix), m)
+      if (option == 10) return client.reply(m.chat, submenu6(isPrefix), m)
    },
    error: false
 }
@@ -91,75 +87,6 @@ const submenu5 = prefix => {
 }
 
 const submenu6 = prefix => {
-   return `◦  ${prefix}google
-◦  ${prefix}googlef
-◦  ${prefix}gimage
-◦  ${prefix}image
-◦  ${prefix}pinterest
-◦  ${prefix}fetch
-◦  ${prefix}get
-◦  ${prefix}kbbi
-◦  ${prefix}lyrics
-◦  ${prefix}wikipedia`
-}
-
-const submenu7 = prefix => {
-   return `◦  ${prefix}.yotsuba
-◦  ${prefix}shinomiya
-◦  ${prefix}yumeko
-◦  ${prefix}tejina
-◦  ${prefix}Ichiho
-◦  ${prefix}loli
-◦  ${prefix}cosplay
-◦  ${prefix}shota
-◦  ${prefix}boruto
-◦  ${prefix}kaori
-◦  ${prefix}shizuka
-◦  ${prefix}kaga
-◦  ${prefix}kotori
-◦  ${prefix}mikasa
-◦  ${prefix}akiyama
-◦  ${prefix}gremory
-◦  ${prefix}isuzu
-◦  ${prefix}shina
-◦  ${prefix}kagura
-◦  ${prefix}shinka
-◦  ${prefix}eba
-◦  ${prefix}elaina`
-}
-const submenu8 = prefix => {
-   return `◦  ${prefix}lolice
-◦  ${prefix}tp
-◦  ${prefix}itssostupid
-◦  ${prefix}iss
-◦  ${prefix}stupid
-◦  ${prefix}blur
-◦  ${prefix}gay
-◦  ${prefix}hornycard
-◦  ${prefix}hornylicense
-◦  ${prefix}pixel
-◦  ${prefix}simpcard
-◦  ${prefix}ytcomment`
-}
-
-const submenu9 = prefix => {
-   return `◦  ${prefix}tomp3
-◦  ${prefix}tovn
-◦  ${prefix}bass
-◦  ${prefix}blown
-◦  ${prefix}deep
-◦  ${prefix}earrape
-◦  ${prefix}fast
-◦  ${prefix}fat
-◦  ${prefix}nightcore
-◦  ${prefix}reverse
-◦  ${prefix}robot
-◦  ${prefix}slow
-◦  ${prefix}smooth
-◦  ${prefix}tupai`
-}
-
-const submenu10 = prefix => {
    return `◦  ${prefix}join *link group Whatsapp*
 ◦  ${prefix}gimage
 ◦  ${prefix}image
