@@ -1,10 +1,10 @@
 // Owner number
 
-global.owner = '212689349938'
+global.owner = '62821220876725'
 
 // Owner name
 
-global.owner_name = '爪尺 ㄚㄖㄩ匚卄几'
+global.owner_name = '𝕭𝖔𝖙 • Andii あ'
 
 // Maximum upload file size limit (Default : 250 MB)
 
